@@ -43,6 +43,16 @@ a.btn{
   color: #86c440;
 }
 
+.post-header{
+  background-color: rgb(0, 153, 204);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  text-align: center;
+  color: white;
+  padding: 1px 10px 20px 10px;
+  margin-bottom: 4rem;
+}
+
 @media only screen and (max-width: 500px){
   a.btn{
     margin-bottom: 10px;
