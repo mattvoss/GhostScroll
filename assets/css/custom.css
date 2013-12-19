@@ -22,6 +22,8 @@ a.btn{
 
 .post-footer{
   margin: 4rem 0 4rem 0;
+  padding: 0;
+  border-top: none;
 }
 
 .post-footer .share{
