@@ -20,10 +20,16 @@ a.btn{
   padding: 10px 17px 10px 17px;
 }
 
+.post-footer{
+  margin: 4rem 0 4rem 0;
+}
+
 .post-footer .share{
   position: relative;
   width: 100%;
   text-align: center;
+  top: 0;
+  margin-bottom: 0;
 }
 
 .post-footer .share a{
