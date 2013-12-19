@@ -14,6 +14,7 @@
 
             <a class='btn first'>Take a tour</a>
             <a class='btn last'>Cut to the chase</a><br>
+            <span style="font-size: 200%;"><a href="http://www.twitter.com/GertjanLeemans" class="icon-twitter-sign"></a>  <a href="http://www.linkedin.com/in/gertjanleemans" class="icon-linkedin-sign"></a>  <a href="mailto:<a href='mailto:gertjan@digitalisma.com'>gertjan@digitalisma.com</a>" class="icon-envelope"></a>  <a href="skype:gertjan.digitalisma.com?call" class="icon-skype"></a>  <a href="https://github.com/gertjanleemans" class="icon-github-sign"></a></span>
             <i id='header-arrow' class="icon-angle-down"></i>
         </div>
     </div>
@@ -33,11 +34,7 @@
             {{#if @first}}
                 <article class="{{post_class}} first">
             {{else}}
-                {{#if @last}}
-                    <article class="{{post_class}} last">
-                {{else}}
-                    <article class="{{post_class}}">
-                {{/if}}
+                <article class="{{post_class}}">
             {{/if}}
         
             <header class="post-header">
@@ -48,6 +45,26 @@
             <section class="post-content">
                 <p>{{content characters="9999999999999"}}</p>
             </section>
+            
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-linkedin" href="http://www.linkedin.com/shareArticle?url={{url absolute="true"}}"
+                   onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;">
+                    <span class="hidden">LinkedIn</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
         </article>
         <div class='post-after'></div>
     </div>
@@ -56,5 +73,33 @@
 
     {{!! After all the posts, we have the previous/next pagination links }}
     
+    <div class='post-holder'>
+        <article class="post tag-about last">
+            <header class="post-header">
+                <h2 class="post-title">About me</h2>
+            </header>
+            <section class="post-content">
+                <p><p>I've been interested in technology since I was very young. My fascination for computers came when I was about 8. I started programming when I was 10. I graduated with a Bachelor degree in Computing Science in 2012.</p>
 
+                <p>When smartphones got around, I really got hooked. In 2012 I co-founded <a href="http://www.digitalisma.com">Digitalisma</a>, to provide customers with the best Mobile experience possible.</p>
+
+                <p>Being part of a start-up, I'm a part of everything that's going on at Digitalisma. I'm primarily focussed on the technical side, and am always on the lookout for people that can strengthen our (already awesome) team!</p></p>
+            </section>
+        </article>
+        <div class='post-after'></div>
+    </div>
+
+    <div class='post-holder'>
+        <article class="post tag-social tag-share tag-contact">
+            <header class="post-header">
+                <h2 class="post-title" style="text-align: center;">Get in touch</h2>
+            </header>
+            <section class="post-content">
+                <p><p><center>If you'd like to connect with me, send me an invite on LinkedIn, drop me a tweet, send me a mail or contact me on any of the rest!</p>
+
+                <p><span style="font-size: 200%;"><a href="http://www.twitter.com/GertjanLeemans" class="icon-twitter-sign"></a>  <a href="http://www.linkedin.com/in/gertjanleemans" class="icon-linkedin-sign"></a>  <a href="mailto:<a href='mailto:gertjan@digitalisma.com'>gertjan@digitalisma.com</a>" class="icon-envelope"></a>  <a href="skype:gertjan.digitalisma.com?call" class="icon-skype"></a>  <a href="https://github.com/gertjanleemans" class="icon-github-sign"></a></span></center></p></center></p></p>
+            </section>
+        </article>
+        <div class='post-after'></div>
+    </div>
 </main>
