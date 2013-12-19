@@ -1,0 +1,31 @@
+#site-head-content{
+  padding: 1px 10px 20px 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+
+.post .share h4{
+  margin-bottom: 10px;
+}
+
+.post .share a{
+  font-size: 200%;
+}
+
+a.btn{
+  margin-bottom: 2rem;
+  background-color: white;
+  color: #222;
+  padding: 10px 17px 10px 17px;
+}
+
+@media only screen and (max-width: 500px){
+  a.btn{
+    margin-bottom: 10px;
+  }
+  
+  .poweredby{
+    margin-top: 40px;
+  }
+}
