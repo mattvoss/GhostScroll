@@ -9,8 +9,8 @@
   margin-bottom: 10px;
 }
 
-.post .share a{
-  font-size: 140%;
+.post .share a, .largeIcons{
+  font-size: 200%;
 }
 
 a.btn{
