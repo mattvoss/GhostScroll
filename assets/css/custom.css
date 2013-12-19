@@ -39,6 +39,10 @@ a.btn{
   color: #222;
 }
 
+.post-footer .share a:hover{
+  color: #86c440;
+}
+
 @media only screen and (max-width: 500px){
   a.btn{
     margin-bottom: 10px;
