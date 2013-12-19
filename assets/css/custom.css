@@ -20,6 +20,17 @@ a.btn{
   padding: 10px 17px 10px 17px;
 }
 
+.post-footer .share{
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.post-footer .share a{
+  margin: 0;
+  color: #222;
+}
+
 @media only screen and (max-width: 500px){
   a.btn{
     margin-bottom: 10px;
