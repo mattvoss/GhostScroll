@@ -53,6 +53,16 @@ a.btn{
   margin-bottom: 4rem;
 }
 
+.fixed-nav{
+  width: 20%;
+}
+
+@media only screen and (max-width: 1130px) {
+  .fixed-nav{
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 500px){
   a.btn{
     margin-bottom: 10px;
@@ -60,5 +70,9 @@ a.btn{
   
   .poweredby{
     margin-top: 40px;
+  }
+  
+  .fixed-nav{
+    width: auto;
   }
 }
