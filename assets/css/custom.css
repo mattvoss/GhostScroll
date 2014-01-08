@@ -112,6 +112,7 @@ a.btn{
   font-size: 24px;
   font-weight: 500;
   color: #333;
+  margin-left: 0px !important;
 }
 .plan-feature + .plan-feature {
   margin-top: 5px;
