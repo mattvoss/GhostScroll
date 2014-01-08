@@ -36,22 +36,22 @@
     {{! Each post will be output using this markup }}
     {{#foreach posts}}
     <div class='post-holder'>
-        
+
             {{#if @first}}
                 <article class="{{post_class}} first">
             {{else}}
                 <article class="{{post_class}}">
             {{/if}}
-        
+
             <header class="post-header">
-                
+
                 <h2 class="post-title">{{{title}}}</h2>
 
             </header>
             <section class="post-content">
                 <p>{{content characters="9999999999999"}}</p>
             </section>
-            
+
         </article>
         <div class='post-after'></div>
     </div>
@@ -59,28 +59,56 @@
     {{/foreach}}
 
     {{!! After all the posts, we have the previous/next pagination links }}
-    
+
     <div class='post-holder'>
         <article class="post tag-about last">
             <header class="post-header">
-                <h2 class="post-title">About me</h2>
+                <h2 class="post-title">Pricing</h2>
             </header>
             <section class="post-content">
-                <p>
-                    <p>
-                        My name is Gertjan. I'm an entrepreneur, mobile developer, athlete, gadget enthusiast and I love to read. 
-                        I've been interested in technology since I was very young, especially computers. I graduated with a Bachelor degree in Computing Science in 2012.
-                        When smartphones got around, I really got hooked. In 2012 I co-founded <a href="http://www.digitalisma.com">Digitalisma</a>, to provide customers with the best Mobile experience possible.
-                    </p>
-                    
-                    <p>
-                        Apart from that, I'm a sports fanatic: I play basketball from when I was 5, go to the gym 4 times per week on average, and have been coaching teams for 10+ years. I like to lead teams, so I can learn something from them and they from me. I'm always on the lookout to learn new skills, and I love to use my time (and of others) as effectively as possible. I excel at finding creative solutions to problems, whichs contributes to everything I think and do. 
-                    </p>
-
-                    <p>
-                        Being in a start-up, I'm a part of everything that's going on at Digitalisma. I'm primarily focussed on the technical side, and am always on the lookout for people that can strengthen our (already awesome) team!
-                    </p>
-                </p>
+                <div class="plans">
+                  <div class="plan">
+                    <h3 class="plan-title">Started</h3>
+                    <p class="plan-price">$19 <span class="plan-unit">per month</span></p>
+                    <ul class="plan-features">
+                      <li class="plan-feature">2 <span class="plan-feature-name">websites</span></li>
+                      <li class="plan-feature">5<span class="plan-feature-unit">GB</span> <span class="plan-feature-name">storage</span></li>
+                      <li class="plan-feature">3 <span class="plan-feature-name">users</span></li>
+                    </ul>
+                    <a href="#" class="plan-button">Choose Plan</a>
+                  </div>
+                  <div class="plan plan-highlight">
+                    <p class="plan-recommended">Recommended</p>
+                    <h3 class="plan-title">Team</h3>
+                    <p class="plan-price">$49 <span class="plan-unit">per month</span></p>
+                    <ul class="plan-features">
+                      <li class="plan-feature">5 <span class="plan-feature-name">websites</span></li>
+                      <li class="plan-feature">20<span class="plan-feature-unit">GB</span> <span class="plan-feature-name">storage</span></li>
+                      <li class="plan-feature">10 <span class="plan-feature-name">users</span></li>
+                    </ul>
+                    <a href="#" class="plan-button">Choose Plan</a>
+                  </div>
+                  <div class="plan">
+                    <h3 class="plan-title">Premium</h3>
+                    <p class="plan-price">$99 <span class="plan-unit">per month</span></p>
+                    <ul class="plan-features">
+                      <li class="plan-feature">20 <span class="plan-feature-name">websites</span></li>
+                      <li class="plan-feature">50<span class="plan-feature-unit">GB</span> <span class="plan-feature-name">storage</span></li>
+                      <li class="plan-feature">25 <span class="plan-feature-name">users</span></li>
+                    </ul>
+                    <a href="#" class="plan-button">Choose Plan</a>
+                  </div>
+                  <div class="plan">
+                    <h3 class="plan-title">Corporate</h3>
+                    <p class="plan-price">$249 <span class="plan-unit">per month</span></p>
+                    <ul class="plan-features">
+                      <li class="plan-feature">&infin; <span class="plan-feature-name">websites</span></li>
+                      <li class="plan-feature">200<span class="plan-feature-unit">GB</span> <span class="plan-feature-name">storage</span></li>
+                      <li class="plan-feature">&infin; <span class="plan-feature-name">users</span></li>
+                    </ul>
+                    <a href="#" class="plan-button">Choose Plan</a>
+                  </div>
+                </div>
             </section>
         </article>
         <div class='post-after'></div>
